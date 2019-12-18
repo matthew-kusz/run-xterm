@@ -9,7 +9,7 @@ xterm
 echo "Installing xterm..."
 yum update -y
 yum install -y xauth
-yum install -y x11-utils
+yum install -y x11
 yum install -y xterm
 yum clean
 echo "Done."
