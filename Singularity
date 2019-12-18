@@ -8,7 +8,6 @@ xterm
 %post  
 echo "Installing xterm..."
 yum update -y
-yum install -y apt-utils
 yum install -y xauth
 yum install -y x11-utils
 yum install -y xterm
