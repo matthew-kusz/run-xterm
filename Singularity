@@ -1,5 +1,5 @@
 Bootstrap:docker  
-From:ubuntu:18.04
+From:centos:7
 
 %runscript
 echo "Running xterm..." 
@@ -7,10 +7,10 @@ xterm
 
 %post  
 echo "Installing xterm..."
-apt-get update -y
-apt-get install -y apt-utils
-apt-get install -y xauth
-apt-get install -y x11-utils
-apt-get install -y xterm
-apt-get clean
+yum update -y
+yum install -y apt-utils
+yum install -y xauth
+yum install -y x11-utils
+yum install -y xterm
+yum clean
 echo "Done."
